@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace WindowsForms
@@ -10,8 +11,14 @@ namespace WindowsForms
 			InitializeComponent();
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void button1_Click(object sender, EventArgs e)
 		{
+			new Thread(() =>
+			{
+				LoginScreen login = new LoginScreen();
+				login.ShowDialog();
+			}).Start();
+			Close();
 		}
 	}
 }
