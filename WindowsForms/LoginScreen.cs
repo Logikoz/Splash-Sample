@@ -20,9 +20,5 @@ namespace WindowsForms
 
 			MessageBox.Show($"{emailField.Text} voce logou com sucesso!");
 		}
-
-		private void emailField_TextChanged(object sender, System.EventArgs e)
-		{
-		}
 	}
 }

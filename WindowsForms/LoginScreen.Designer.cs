@@ -76,7 +76,6 @@
 			this.emailField.Name = "emailField";
 			this.emailField.Size = new System.Drawing.Size(159, 23);
 			this.emailField.TabIndex = 2;
-			this.emailField.TextChanged += new System.EventHandler(this.emailField_TextChanged);
 			// 
 			// LoginScreen
 			// 
